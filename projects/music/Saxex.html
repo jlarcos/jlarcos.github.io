@@ -1,0 +1,181 @@
+<HTML><HEAD>
+<TITLE>Saxex</TITLE>
+</HEAD>
+<BODY BACKGROUND="Fons1.jpg" TEXT="#08084D" LINK="#241FFF" ALINK="#222222"
+    VLINK="#860A47">
+
+<P><CENTER><IMG ALIGN=center SRC="Saxex-logo.GIF" ALT="logo"></CENTER></P>
+
+<hr>
+<font size=+1>
+
+<CENTER>
+<P><FONT color="#241FFF" SIZE=6>A Case-Based Reasoning system<br>
+for generating expressive performances</FONT></P>
+<P><A href="http://www.iiia.csic.es/~arcos">Josep Llu&iacute;s Arcos</A></P>
+</CENTER>
+</P>
+We have developed Saxex, a case-based reasoning system for generating
+expressive performances of melodies based on examples of human performances.
+Case-based Reasoning (CBR) is a recent approach to problem solving and
+learning where new problems are solved using similar previously
+solved problems.  The two basic mechanisms used by CBR are (i) the
+retrieval of solved problems (also called precedents or cases) using some
+similarity criteria and (ii) the adaptation of the solutions applied in the
+precedents to the new problem.  Case-based reasoning techniques are
+appropriate on problems where many examples of solved problems can be
+obtained---like in our case where multiple examples can be easily obtained
+from recordings of human performances.</P>
+
+Sound analysis and synthesis techniques based on spectrum models like <A
+HREF="http://www.iua.upf.es/~sms/">SMS</A>
+(Spectral Modeling Synthesis) are useful for the extraction of high level
+parameters from real sounds, their transformation and the synthesis of a
+modified version of the original.  Saxex uses SMS in order to extract basic
+information related to several expressiveness parameters such as dynamics,
+rubato, vibrato, and articulation.  The SMS synthesis procedure allows
+Saxex the generation of new expressive interpretations (new sound
+files).</P>
+
+Saxex incorporates background musical knowledge based on Narmour's
+implication/realization model and Lerdahl and Jackendoff's generative
+theory of tonal music (GTTM).  These theories of musical perception and
+musical understanding are the basis of the computational model of musical
+knowledge of the system.</P>
+
+Saxex is implemented in <A HREF="https://www.iiia.csic.es/~arcos/research/cbr.html#noos">Noos</A>, a 
+reflective object-centered representation language designed to support
+knowledge modeling of problem solving and learning.</P>
+
+We have started to study the issue of musical expression in the context of
+tenor saxophone interpretations.  We have done several recordings of a
+tenor sax performer playing several Jazz standard ballads with different
+degrees of expressiveness, including an (almost) inexpressive
+interpretation of each piece.  These recordings are analyzed using the SMS
+spectral modeling techniques in order to extract basic information related
+to the expressive parameters.  The set of extracted parameters together
+with the scores of the pieces constitute the set of cases of the case-based
+system.  From this set of cases and using similarity criteria based on the
+background musical knowledge, the system infers a set of possible
+expressive transformations for a given piece.  Finally, using the SMS
+synthesis procedure and the set of inferred transformations, Saxex
+generates new expressive interpretations of the same jazz ballads as well
+as of other similar melodies.</P>
+
+The block diagram of the Saxex components is the following:</P>
+
+<P><CENTER><IMG ALIGN=center SRC="Project-sc.GIF" ALT="scheme"></CENTER></P>
+
+<B>The Case-based Reasoner</B></P>
+
+The problem solving method developed follows the subtask decomposition of
+CBR methods: <I>retrieve, adapt, and incorporate</I> (<A HREF="#cbr">see figure
+below</A>).
+
+<UL TYPE="DISC">
+<LI> <EM>Retrieve:</EM> The goal of the retrieve task is to choose the set
+of notes (cases) most similars to the current problem.  This task is
+decomposed in three subtasks:
+
+  <UL TYPE="CIRCLE">
+  <LI><EM>Identify:</EM> The goal of this task is to build retrieval
+  patterns using two alternative criteria. The first criterion uses
+  the Narmour's implication/realization structures. The second used criterion
+  is the metrical importance (following GTTM) of the notes.
+
+  <LI><EM>Search:</EM> The goal of this second task is to search cases in the
+  case memory using <A HREF="https://www.iiia.csic.es/~arcos/research/cbr.html#noos">Noos</A>
+  retrieval methods and previously constructed patterns.
+
+  <LI><EM>Select:</EM> The goal of the select task is to rank the retrieved
+  cases using <A HREF="https://www.iiia.csic.es/~arcos/research/cbr.html#noos">Noos</A>
+  preference methods.  The preference methods use criteria such as similarity
+  in duration of notes, harmonic stability, or melodic directions.
+  </UL>
+
+<LI> <EM>Adapt:</EM> the goal of the adapt task is to choose a set of
+expressive transformations to be applied in the current problem from the
+set of more similar cases.  The first criterion used is to copy from the
+most similar case.  When there are several cases considered equally
+similar, the mayority rule is used.  Finally, when previous criteria not
+are sufficient all the cases are considered equally possible alternatives
+and one of them is selected randomly.
+
+<LI> <EM>Incorporate:</EM> the incorporation of the new solved problem to
+the memory of cases is performed automatically in <A
+HREF="https://www.iiia.csic.es/~arcos/research/cbr.html#noos">Noos</A>.  All solved
+problems will be available for the reasoning process in future problems.
+</UL>
+
+<A NAME="cbr"></A>
+<P><CENTER><IMG ALIGN=center SRC="Saxex-cbr.GIF" ALT="cbr decomposition"></CENTER></P>
+
+<P><B>One small Example</B></P>
+
+<P><CENTER><EM>Autumn Leaves</EM><BR>
+          <IMG ALIGN=center SRC="Autumn.jpg" ALT="score"></CENTER></P>
+
+<P><CENTER><TABLE BORDER="6" ALIGN="CENTER" BGCOLOR="#BAE6FF">
+<TD ALIGN="LEFT">Inexpressive Phrase<BR>
+   <SPACER TYPE="HORIZONTAL" SIZE="25">
+   <A HREF="curt_syn.wav"><img src="/icons/sound1.gif"></A>  <img src="fletxa.GIF"></TD>
+<TD ALIGN="CENTER"><font size=12 color="#860A47"><I>Saxex</I></font></TD>
+<TD ALIGN="LEFT"><SPACER TYPE="HORIZONTAL" SIZE="35">Expressive Phrase<BR>
+   <img src="fletxa.GIF">   <A HREF="curt_exp.wav"><img src="/icons/sound1.gif"></A></TD>
+</TABLE></CENTER></P>
+
+Previous work on the analysis and synthesis of musical expression has
+addressed the study of parameters such as rhythm and vibrato, however, to
+the best of our knowledge, the only previous work addressing the issue of
+learning to generate expressive performances based on examples is that of
+Widmer, who uses explanation-based techniques to learn rules for dynamics
+and rubato in the context of a MIDI electronic piano.  In our approach we
+deal with additional expressive parameters in the context of a expressively
+richer instrument.  Furthermore, to the best of our knowledge, this is the
+first attempt to deal with this problem using case-based techniques.  The
+results obtained are comparable to a human performance specially for
+dynamics, rubato and vibrato, however the articulation needs further work.
+</P></FONT>
+
+<P><B>A complete example</B></P>
+
+<P><CENTER><EM>All of Me</EM><BR>
+          <IMG ALIGN=center SRC="Allme.gif" ALT="score"></CENTER></P>
+
+<CENTER><TABLE BORDER=6 >
+<TR>
+<TD ALIGN=LEFT><FONT SIZE=+2>Inexpressive Phrase<BR>
+<SPACER TYPE="HORIZONTAL" SIZE="25"><A HREF="Allme-syn.wav"><IMG SRC="/icons/sound1.gif" HEIGHT=33 WIDTH=29></A></FONT>
+<IMG SRC="fletxa.GIF" HEIGHT=31 WIDTH=52></TD>
+
+<TD ALIGN=CENTER BGCOLOR="#E0FFFF"><B><I><FONT COLOR="#860A47"><FONT SIZE=+4>Saxex</FONT></FONT></I></B></TD>
+
+<TD ALIGN="LEFT"><SPACER TYPE="HORIZONTAL" SIZE="35">
+  <FONT SIZE=+2>Expressive Phrases</FONT><BR>
+<IMG SRC="fletxa.GIF" HEIGHT=31 WIDTH=52>
+   <A HREF="Allme-jexp.wav"><IMG SRC="/icons/sound1.gif" HEIGHT=33 WIDTH=29></A> (Joyful)</BR>
+   <SPACER TYPE="HORIZONTAL" SIZE="55">
+   <A HREF="Allme-pexp.wav"><IMG SRC="/icons/sound1.gif" HEIGHT=33 WIDTH=29></A> (Sad)</BR>
+</TD>
+</TR>
+</TABLE></CENTER>
+
+<hr>
+
+<TR><TD VAlign="bottom" Align="right">
+      <FONT Size="-1"><P>
+
+<A HREF="http://www.iiia.csic.es/IIIA.html"><IMG ALIGN="LEFT"SRC="http://www.iiia.csic.es/IIIA-logo.GIF" ALT="IIIA"></A><P>
+<font size=4>
+<A href="http:index.html"><tt><CENTER>music projects</CENTER></tt></FONT></A>
+     &#169; <A href="mailto:arcos@iiia.csic.es">Josep Llu&iacute;s Arcos</A>
+           <BR><A HREF="http://www.iiia.csic.es/IIIA.html">IIIA</A>
+          (<A HREF="http://www.csic.es">CSIC</A>)
+      <BR><A HREF="http://www.iiia.csic.es"> http://www.iiia.csic.es</A>
+      <BR> 28 Jan 1997
+
+   </TD></TR>
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Home | A-MATE</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/site.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logoIIIA.png" /> A-MATE</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1><strong>A-MATE:</strong> Integrated Solution for Monitoring, Analysis and Anticipation of ASD children's behaviors</h1>
+
+
+        
+
+<div class="col-md-6">
+<img src="img/sistema.png"  style="width:100%; 
+    margin: 40px 0px;">
+</div>
+
+
+<div class="col-md-6">
+
+<div class="panel panel-info">
+    <div class="panel-heading"> 
+        <h2 class="panel-title">Motivation</h2> 
+    </div>
+    <div class="panel-body">
+    <p>The aim of the project is to build assistant applications targeted to autistic people,
+        their parents and therapists to help autistic people to handle unexpected situations on
+        a daily basis more effectively, hence facilitating their integration in the society.</p>
+
+    <p>Autism Spectrum Disorders (ASDs) are associated with intellectual capacity ranging
+        from subtle comprehension of problems or limited social function to severe disabilities.
+        Children with ASD show behavioural and emotional disorders; they have difficulty recognising
+        emotional changes and in organising the dimensions of time and space.
+        These disorders create unusual behaviours that hinder autistic children integration in
+        the society</p>
+
+    <p>The project make use of solid know-how on autism and state-of-the-art machine learning,
+    big data techniques, virtual assistants, and biometrical technologies.
+    Specifically, we use
+    (1) wearable technologies to gather information regarding children activities,
+    (2) process the information with machine learning algorithms to detect and anticipate behaviors,
+    and, finally,
+    (3) mediate the communication through a Virtual Assistant able to speak with the child.
+    </p>
+    </div>
+</div>
+
+</div>
+
+
+<div id="system-components" style="float:left;">
+<div class="col-md-4">
+    <div class="panel panel-info">
+        <div class="panel-heading"> 
+            <h2 class="panel-title">Data Acquisition</h2> 
+        </div>
+        <div class="panel-body">
+            
+        <p>Biometrical data has been acquired using the
+        <a href="http://empatica.com/e4-wristband" target="_blank">Empatica E4 Wristband</a>,
+        a wearable wristband specially designed for medical research. </p>
+
+        <p>The <strong>Empatica E4 Wristband</strong> has different
+        kinds of sensors: accelerometer, skin temperature sensor, photoplethysmography (PPG)
+        sensor and electrodermal activity (EDA) sensor. The photoplethysmography sensor measures
+        Blood Volume Pulse (BVP), from which heart rate, heart rate variability (HRV), and other
+        cardiovascular features may be derived.</p>
+
+        <a href="http://empatica.com/e4-wristband" target="_blank">
+            <img src="img/e4-front_light.png" style="width:40%;margin-right:10%">
+            <img src="img/e4-back.png" style="width: 40%">
+        </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-4">
+    <div class="panel panel-info">
+        <div class="panel-heading"> 
+            <h2 class="panel-title">Machine Learning</h2> 
+        </div>
+        <div class="panel-body">
+            <img src="img/captura-activity-recognition.png" style="width:100%">
+
+<p><strong>A-MATE classifier</strong> combines Time Series Analysis with classification algorithms to automatically recognize 10 behaviours.</p>
+<p>The statistical features used are the following: mean, standard deviation, variance, correlation
+between axis, energy, inter-quartile range (IQR), mean absolute deviation (MAD) and
+root-mean square (RMS). This makes a total of 24 features if using one wristband or
+48 features if using both wristbands.</p>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="col-md-4">
+    <div class="panel panel-info">
+        <div class="panel-heading"> 
+            <h2 class="panel-title">Virtual Assistant</h2> 
+        </div>
+        <div class="panel-body">
+            
+<p>The <strong>A-MATE activity recognition module</strong> is connected to a virtual assistant designed to interact with children with ASD. A transitional object - the <strong><a href="http://virtualamigo.com" target="_blank">Virtual Assistant</a></strong> - can improve the children engagement.</p>
+
+<a href="http://virtualamigo.com" target="_blank"><img src="img/virtualAmigo.png" style="width:100%"></a>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="clearfix" />
+</div>
+
+
+
+
+<div class="col-md-12">
+    <div class="panel panel-info" id="experiments">
+        <div class="panel-heading"> 
+            <h2 class="panel-title">Experiments</h2> 
+        </div>
+        <div class="panel-body">
+            
+<p>Experiments were conducted with the collaboration of
+<a href="http://www.planetaimaginario.org/en/">Fundación Planeta Imaginario</a>.
+Specifically, we recorded 72 hours of data from 24 real therapy sessions involving 3 different
+children. For each therapy session, all the activities and behaviors were annotated by an observer
+using an application specially designed for this purpose.
+10 different types of activities were collected in each session with a mean of annotations
+per session of 350.</p>
+
+
+<h3>Context Recognition</h3>
+
+<p>Two different contexts are analyzed: <em>WORKING</em> and <em>REST</em>.
+The <em>WORKING</em> context is defined as the period of time when the kid and the
+therapist are working together in some unit.
+The <em>REST</em> context is defined as the period of time after finishing a WORKING time,
+in which the kid, either alone or accompanied by the therapist, engage in an activity
+which is used as reinforcement.</p>
+
+<div style="text-align:center">
+    <img src="img/Labeling.png" width="50%" style="margin:0px auto">
+</div>
+
+<h3>Activity Recognition</h3>
+
+<p>We are dealing with the recognition of different motor activities such as:
+<em>RUN</em>, <em>WALK</em>, <em>SWING</em>, <em>PLACE-TOKEN</em>, <em>MOVE</em>,
+<em>DOWNTIME</em>.</p>
+
+<p>Additionally, we are also annotating therapists instructions and child reactions
+to these instructions. We have used annotations such as: <em>DEMAND</em>,
+<em>REDIRECTION</em>, <em>REINFORCMENT</em>, <em>COMPLAIN</em>,
+<em>AUTO-ESTIMULATION</em>, <em>ECHOLALIA</em>.</p>
+
+
+<div style="text-align:center">
+    <img src="img/Recognition.png" width="50%" style="margin:0px 20px 0 auto">
+    <img src="img/prediction-results.png" width="35%" style="margin:0px auto">
+</div>
+
+
+
+<h3>References</h3>
+
+J. Serrà, J.Ll. Arcos (2014).
+<a href="https://www.iiia.csic.es/en/node/53913">An empirical evaluation of similarity measures for
+    time series classification</a>, Knowledge-Based Systems, vol. 67, pp. 305-314.
+
+<h3>Related Research</h3>
+
+<p>Desenvolupament d’una eina de Registre i anàlisi de dades en dispositius wearable:
+    Aplicació en el context de desintoxicació de pacients drogodependents.<br/>
+Memòria del Projecte de Fi de Carrera d'Enginyeria Informàtica de la UAB realitzat per Albert Xicola Botifoll.</p>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-5 contacto">
+
+<h2><span>Contact</span></h2>
+
+<p>
+<strong>IIIA-CSIC</strong><br />
+Dr. Josep Lluís Arcos: arcos@iiia.csic.es <br />
+Lissette Lemus: lissette@iiia.csic.es <br /><br />
+Tlf: +34 935809570
+</p>
+
+</div>
+
+<div class="col-md-5 col-md-offset-2 contacto">
+
+<h2><span>Partners</span></h2>
+
+<img src="img/logoiiia-petit.png"  style="width: 55%" />
+<img src="img/naradapng-logo.png" style="width: 45%" />
+<img src="img/logo-planeta.jpeg" style="width: 45%" />
+
+</div>
+
+
+
+      </div>
+
+    </div><!-- /.container -->
+
+  </body>
+</html>

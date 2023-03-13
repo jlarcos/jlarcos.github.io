@@ -1,0 +1,170 @@
+body {
+	padding-top: 50px;
+}
+.starter-template {
+	padding: 40px 15px;
+}
+
+
+#evento-list .btn-evento {
+	margin: 5px 2%;
+	/*
+    width: 45%;
+    float: left !important;
+    */
+}
+
+#evento-list .btn-evento a {
+	width: 100%;
+}
+
+#evento-list div.input-group.btn-evento span.form-control {
+    padding: 13px 0;
+    height: 46px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.login-wrapper {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px 40px;
+}
+
+.nav .user-login span {
+    display: block;
+    color: #ccc;
+    padding: 15px;
+    float: left;
+}
+.nav .user-login a {
+    float: left;
+}
+
+#frm-edit {
+    margin-top: 20px;
+}
+
+#frm-edit .row {
+    margin-top: 20px;
+}
+
+#acciones-pendientes-msg {
+    margin: 10px 0;
+}
+
+input.show-annotation {
+    display: none;
+}
+
+#marca-list table tr.checked {
+    background-color: cadetblue;
+}
+
+table.table-fixedheader {
+    width: 100%;   
+}
+ 
+table.table-fixedheader, table.table-fixedheader>thead, table.table-fixedheader>tbody, table.table-fixedheader>thead>tr, table.table-fixedheader>tbody>tr, table.table-fixedheader>thead>tr>th, table.table-fixedheader>tbody>td {
+    display: block;
+}
+table.table-fixedheader>thead>tr:after, table.table-fixedheader>tbody>tr:after {
+    content:' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+ table.table-fixedheader>tbody {
+    overflow-y: scroll;
+    height: 400px;
+    
+}
+ table.table-fixedheader>thead {
+    overflow-y: scroll;    
+}
+ table.table-fixedheader>thead::-webkit-scrollbar {
+    background-color: inherit;
+}
+
+
+table.table-fixedheader>thead>tr>th:after, table.table-fixedheader>tbody>tr>td:after {
+    content:' ';
+    display: table-cell;
+    visibility: hidden;
+    clear: both;
+}
+
+
+ table.table-fixedheader>thead tr th, table.table-fixedheader>tbody tr td {
+    float: left;    
+    word-wrap:break-word;     
+}
+
+
+.navbar {
+    background-image: linear-gradient(to bottom,#007E9A 0,#004254 100%);
+}
+
+.navbar a {
+    color: whitesmoke;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 34px;
+    display: inline;
+    margin-top: -5px;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+h1 strong {
+    font-size: 140%;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+#system-components {
+    margin-top: 50px;
+}
+
+#system-components .panel {
+    min-height: 565px;
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#experiments h3 {
+    margin-top: 45px;
+    border-bottom: 2px solid #004254;
+    padding-bottom: 7px;
+}
+
+.contacto strong {
+    font-size: 130%;
+}
+
+.contacto h2  {
+    background-color: #007e9a;
+    color: whitesmoke;
+    padding: 10px;
+}
+.contacto h2 i {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 0 0 30px;
+    border-color: transparent transparent transparent #333;
+}
