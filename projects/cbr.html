@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Josep Lluis Arcos | CBR</title>
+   <link href="https://www.iiia.csic.es/~arcos/css/styles.css" rel="stylesheet"/>
+   <base href="https://www.iiia.csic.es/~arcos/" />
+</head>
+<body style="margin: 0 0">
+<div class="top">
+	<img src="https://www.iiia.csic.es/~arcos/images/logo-iiia-25anys.jpeg" alt="Home" style="margin-left:20px;margin-top:-5px;height:90px"/>
+        <img src="https://www.iiia.csic.es/~arcos/images/csic-logo.jpg" alt="CSIC" style="float:right;margin-right:20px;margin-top:16px;height:60px"/>
+        <a class="language-link" style="margin-left:300px;" href="ca/">Català</a>
+        <a class="language-link active" href="en/">English</a>
+        <a class="language-link" href="es/">Español</a>
+</div>
+<div class="menu" align="center" style="color:#FFF;font-size:24px;">
+  <span style="display: inline-block;vertical-align:middle;margin:5px">
+    Josep Lluis Arcos @ CBR
+    <span id="filterName"></span>
+  </span>
+</div>
+
+<div class="content" style="background-color:#eee;margin-left:20px" id="general-container">
+
+    <h2 id="research" align="center">CBR</h2>
+
+    <p style="margin:20px">Interested in the design of Knowledge-Intensive CBR systems and the techniques involved in retrieving
+    and adapting highly structured cases.
+    Currently focused on the design of CBR systems with <a class="blue" href="research/cbr.html#ICBR">introspective capabilities</a>
+    for autonomously improving the retrieval and adaptation steps
+    (see <a class="blue" href="https://www.iiia.csic.es/research/project/?project_id=185">NEXT-CBR</a> project).
+    </p>
+
+    <hr/>
+
+    <h2 id="cf" align="center" name="ICBR">Introspective CBR</h2>
+
+    <p>
+    When AI technologies are applied to real-world problems, it is often difficult for developers to anticipate all
+    possible eventualities. Especially in long-lived systems, changing circumstances may require changes not only to
+    domain knowledge but also to the reasoning process that brings it to bear.
+    </p>
+    <p>
+    This research investigates applying introspective reasoning to improve the performance of a case-based
+    reasoning system, by guiding learning to improve how a case-based reasoning system applies its cases.
+    The success of a CBR system depends not only on its cases, but also on its ability to use those cases
+    appropriately in new situations, which depends on factors such as the system’s similarity
+    measure and the case adaptation mechanism. Consequently, it is desirable to enable CBR systems to improve
+    the knowledge and processes by which they bring their cases to bear.
+    </p>
+    <p>
+    The goal of our introspective reasoning system is to detect reasoning failures and to refine the function
+    of reasoning mechanisms, to improve system performance on future problems. To achieve this goal,
+    the introspective reasoner monitors the reasoning process, determines the possible causes of its
+    failures, and performs actions that will affect future reasoning processes.
+    </p>
+    <p>
+    Our model is domain independent, that is, it is focused on the general case-based reasoning process
+    for retrieval and adaptation, rather than on specific details of those processes for any particular domain.
+    The model deals with three types of knowledge: indexing knowledge, ranking knowledge, and adaptation knowledge.
+    To apply the model to any concrete application, domain-specific retrieval and adaptation mechanisms must
+    be linked to the model.
+    </p>
+    <p>
+    Introspective reasoning is organized into five tasks: <br/>
+    (1) the monitoring task, in charge of maintaining a trace of the CBR process; <br/>
+    (2) the quality assessment task, which analyzes the quality of the solutions proposed by the system; <br/>
+    (3) the blame assessment task, responsible for identifying the reasoning failures; <br/>
+    (4) the hypothesis generation task, in charge of proposing learning goals; and <br/>
+    (5) the hypothesis evaluation task, which assesses the impact of proposed improvements on solution generation (see Figure below).
+    </p>
+
+    <img align="center" width="500" alt="" src="images/Self-Architecture.png"/>
+
+    <div class="biblio-entry">
+      <span class="biblio-authors">Josep Lluis Arcos; Oguz Mulayim; David Leake </span> (2011).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/MIT-MetaReasoning-ch11.pdf" target="_blank">
+        Using Introspective Reasoning to Improve CBR System Performance
+      </a>, Metareasoning: Thinking about Thinking: MIT Press, pp. 167-182.
+    </div>
+
+    <div class="biblio-entry">
+      <span class="biblio-authors">Oguz Mulayim; Josep Lluis Arcos </span> (2008).
+      <a class="biblio-title" href="http://www2.iiia.csic.es/~arcos/papers/2917.pdf" target="_blank">
+        Understanding Dubious Future Problems
+      </a>, Advances in Case-Based Reasoning: 9th European Conference, ECCBR 2008. Lecture Notes in Artificial Intelligence, Volume 5239, Trier, Germany, p.385-399.
+    </div>
+
+    <hr/>
+
+    <h2 id="noos" align="center">The Noos Representation Language</h2>
+
+    <p>
+    The aim of my PhD was the design and implementation of a representation
+    language for developing knowledge systems that integrate problem solving
+    and learning.
+    Our proposal was that this goal could be achieved with a representation
+    language with representation constructs close to knowledge modeling
+    frameworks and with episodic memory and reflective capabilities.
+    </p>
+    <p>
+    We developed a reflective object-centered representation language
+    close to knowledge modeling frameworks.
+    The language was based on the task/method decomposition principle and the analysis
+    of models required and constructed by problem solving methods.
+    Formalizated using feature terms, a formal approach to
+    object-centered representations, we provided a formalism for integrating
+    different learning techniques.
+    </p>
+    <p>
+    The integration of machine learning tasks has as implication that the
+    knowledge modeling of the implemented knowledge system has to include
+    modeling of learning goals.
+    Moreover, machine learning techniques have to be modeled inside the KM
+    framework and the knowledge requirements of ML have to be addressed.
+    The integration of learning requires the capability of accessing
+    (introspection) to solved problems (that we call episodes) and of
+    modifying the knowledge of the system.
+    </p>
+    <p>
+    The second proposal was that learning methods are methods (in the sense of
+    knowledge modeling PSM) with introspection capabilities that can be also
+    analyzed in the same task/method decomposition way.  Thus, learning methods
+    can be uniformly represented as methods and integrated into our framework.
+    </p>
+    <p>
+    The third proposal was that whenever some knowledge is required by a problem
+    solving method, and that knowledge is not directly available, there is an
+    opportunity for learning.  We called those opportunities impasses,
+    following <a href="http://sitemaker.umich.edu/soar/home" target="_blank"><SMALL>SOAR</SMALL></a>
+    terminology, and the integration of learning was
+    realized by learning methods capable of solving these impasses.
+    </p>
+    <p>
+    Examples of applications developed with Noos were presented.
+    </p>
+
+    <div>
+    For details see <a class="blue" href="resources/PhD/PhdContents.html">Phd's Table of Contents</a>
+    </div>
+
+    <hr/>
+
+    <h2 id="cf" align="center" name="cF">cF: yet another Case-Based Reasoning Framework</h2>
+
+    <p>
+    The cF Framework is a child of the Noos platform. The goal was to
+    concentrate the efforts in providing a simple framework for developing prototypes
+    of CBR applications.
+    </p>
+
+    <hr/>
+
+
+</div>
+
+<div class="footer" align="center">
+<span style="display: inline-block;vertical-align:middle;margin:5px">
+  IIIA-CSIC Campus de la UAB, E-08193 Bellaterra, Catalonia (Spain)
+</span>
+</div>
+</body>
+</html>
