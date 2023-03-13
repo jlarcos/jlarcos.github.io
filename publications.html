@@ -1,0 +1,990 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Josep Lluis Arcos | Publications</title>
+   <link href="./css/styles.css" rel="stylesheet"/>
+   <!-- <base href="https://www.iiia.csic.es/~arcos/" /> -->
+</head>
+<body style="margin: 0 0">
+  <div class="top" align="center" >
+    <span style="width:100%;display: inline-block;vertical-align:middle;padding:10px;font-size:24px;background-color:#333;">
+      Josep Lluis Arcos - Publications
+    </span>
+    <br/>
+    <a class="language-link" href="ca/">Català</a>
+    <a class="language-link active" href="en/">English</a>
+    <a class="language-link" href="es/">Español</a>
+  </div>
+
+  <div class="leftDiv">
+     <svg width="200" height="450" style="font-family: Impact;">
+     	<g transform="translate(100,220)">
+        <text transform="translate(-80,-180)" style="cursor: pointer; fill: #1f77b4; font-size: 16px;">
+          <a xlink:href="https://scholar.google.com/citations?hl=en&user=UVFnVIUAAAAJ" style="color:1f77b4">Google Scholar</a>
+        </text>
+        <text onclick="showAll()" transform="translate(-80,-160)" style="cursor: pointer; fill: #1f77b4; font-size: 16px;">All</text>
+     		<text onclick="filterTag('MAS')" text-anchor="middle" transform="translate(40,120),rotate(-60)" style="cursor: pointer; fill: #2ca02c; font-size: 34px;">MAS</text>
+     		<text onclick="filterTag('CBR')" text-anchor="middle" transform="translate(38,75),rotate(30)" style="cursor: pointer; fill: #1f77b4; font-size: 44px;">CBR</text>
+     		<text onclick="filterTag('Music')" text-anchor="middle" transform="translate(-50,-30),rotate(30)" style="cursor: pointer; fill: #d62728; font-size: 40px;">Music</text>
+     		<text onclick="filterTag('Journal')" text-anchor="middle" transform="translate(20,15),rotate(-60)" style="cursor: pointer; fill: #ffbb78; font-size: 37px;">Journal</text>
+        <text onclick="filterTag('Healthcare')" text-anchor="middle" transform="translate(32,-105),rotate(-60)" style="cursor: pointer; fill: #ff7f0e; font-size: 30px;">Healthcare</text>
+     		<text onclick="filterTag('SaxEx')" text-anchor="middle" transform="translate(52,-40),rotate(30)" style="cursor: pointer; fill: #98df8a; font-size: 23px;">SaxEx</text>
+     		<text onclick="filterTag('SeriousGames')" text-anchor="middle" transform="translate(40,-80),rotate(-60)" style="cursor: pointer; fill: #bcbd22; font-size: 14px;">Games</text>
+     		<text onclick="filterTag('ICCBR')" text-anchor="middle" transform="translate(10,95),rotate(-60)" style="cursor: pointer; fill: #aec7e8; font-size: 20px;">ICCBR</text>
+     		<text onclick="filterTag('Noos')" text-anchor="middle" transform="translate(65,130),rotate(30)" style="cursor: pointer; fill: #ff9896; font-size: 20px;">Noos</text>
+     		<text onclick="filterTag('Guitar')" text-anchor="middle" transform="translate(55,155),rotate(30)" style="cursor: pointer; fill: #9467bd; font-size: 19px;">Guitar</text>
+     		<text onclick="filterTag('ECCBR')" text-anchor="middle" transform="translate(-40,70),rotate(30)" style="cursor: pointer; fill: #c5b0d5; font-size: 18px;">ECCBR</text>
+     		<text onclick="filterTag('Time-series')" text-anchor="middle" transform="translate(-10,-100),rotate(-60)" style="cursor: pointer; fill: #8c564b; font-size: 17px;">Time-series</text>
+     		<text onclick="filterTag('ISMIR')" text-anchor="middle" transform="translate(55,5),rotate(-60)" style="cursor: pointer; fill: #c49c94; font-size: 16px;">ISMIR</text>
+     		<text onclick="filterTag('AAMAS')" text-anchor="middle" transform="translate(82,-5),rotate(-60)" style="cursor: pointer; fill: #c7c7c7; font-size: 15px;">AAMAS</text>
+     		<text onclick="filterTag('AAAI')" text-anchor="middle" transform="translate(-60,-10),rotate(30)" style="cursor: pointer; fill: #e377c2; font-size: 16px;">AAAI</text>
+     		<text onclick="filterTag('Robotics')" text-anchor="middle" transform="translate(40,190),rotate(-60)" style="cursor: pointer; fill: #f7b6d2; font-size: 16px;">Robotics</text>
+     		<text onclick="filterTag('Awards')" text-anchor="middle" transform="translate(-40,-100),rotate(-60)" style="cursor: pointer; fill: #7f7f7f; font-size: 16px;">Awards</text>
+        <text onclick="filterTag('Self-*')" text-anchor="middle" transform="translate(-38,105),rotate(-60)" style="cursor: pointer; fill: #d62728; font-size: 20px;">Self-*</text>
+     		<text onclick="filterTag('SASO')" text-anchor="middle" transform="translate(-55,25),rotate(-60)" style="cursor: pointer; fill: #bcbd22; font-size: 14px;">SASO</text>
+     		<text onclick="filterTag('ECAI')" text-anchor="middle" transform="translate(65,30),rotate(30)" style="cursor: pointer; fill: #dbdb8d; font-size: 14px;">ECAI</text>
+     		<text onclick="filterTag('Swarm')" text-anchor="middle" transform="translate(-60,90),rotate(-60)" style="cursor: pointer; fill: #17becf; font-size: 14px;">Swarm</text>
+     		<text onclick="filterTag('IJCAI')" text-anchor="middle" transform="translate(-25,18),rotate(-60)" style="cursor: pointer; fill: #9edae5; font-size: 14px;">IJCAI</text>
+     		<text onclick="filterTag('Dissemination')" text-anchor="middle" transform="translate(-5,145),rotate(30)" style="cursor: pointer; fill: #1f77b4; font-size: 12px;">Dissemination</text>
+     		<text onclick="filterTag('Introspection')" text-anchor="middle" transform="translate(-15,160),rotate(30)" style="cursor: pointer; fill: #ffbb78; font-size: 12px;">Introspection</text>
+     	</g>
+     </svg>
+  </div>
+
+<div class="content">
+  <div style="background-color:#eee;padding:3px">
+
+    <h2 id="research" align="center">Publications</h2>
+
+    <div class="biblio-entry" ptype="Healthcare Causal">
+      <span class="biblio-authors">Borja Velasco-Regulez, Jesús Cerquides, Josep Lluis Arcos</span> (2022).
+       <a class="biblio-title" href="https://www.cml-4-impact.vanderschaar-lab.com">Hydranet: A Neural Network for the Estimation of Multi-valued Treatment Effects</a>,
+       NeurIPS 2022 CML4Impact Workshop.
+    </div>
+    <div class="biblio-entry" ptype="Healthcare">
+      <span class="biblio-authors">Georgios Athanasiou, Jesus Cerquides, Annelies Raes, Nima Azari-Dolatabad, Daniel Angel-Velez, Ann Van Soom, Josep Lluis Arcos</span> (2022).
+       <a class="biblio-title" href="https://dx.doi.org/10.3233/FAIA220346">Detecting the Area of Bovine Cumulus Oocyte Complexes Using Deep Learning and Semantic Segmentation</a>,
+       Artificial Intelligence Research and Development. IOS Press.
+    </div>
+    <div class="biblio-entry" ptype="Journal Healthcare">
+      <span class="biblio-authors">Borja Velasco-Regulez, Jose Luis Fernandez-Marquez, Nerea Luqui, Jesús Cerquides, Josep Lluis Arcos, Analia Fukelman, Josep Perelló</span> (2022).
+       <a class="biblio-title" href="https://authors.elsevier.com/a/1fiW9_4HcoA4m">Is the phase of the menstrual cycle relevant when getting the covid-19 vaccine?</a>,
+       American Journal of Obstetrics & Gynecology.
+    </div>
+    <div class="biblio-entry" ptype="Journal Healthcare">
+      <span class="biblio-authors">Núria Correa, Jesús Cerquides, Josep Lluis Arcos, Rita Vassena</span> (2022).
+       <a class="biblio-title" href="https://doi.org/10.1016/j.rbmo.2022.06.010">Supporting first FSH dosage for ovarian stimulation with Machine Learning</a>,
+       Reproductive BioMedicine Online.
+    </div>
+    <div class="biblio-entry" ptype="Journal Healthcare Music Stroke">
+      <span class="biblio-authors">Emma Segura, Jennifer Grau-Sánchez, David Sanchez-Pinsach, Myriam de la Cruz,  Esther Duarte, Josep Lluis Arcos, Antoni Rodríguez-Fornells</span> (2021).
+      <a class="biblio-title" href="https://doi.org/10.1080/02699052.2021.1975819">Designing an app for home-based enriched Music-supported Therapy in the rehabilitation of patients with chronic stroke: a pilot feasibility study</a>, Brain Injury, 35(12-13), pp 1585-1597.
+    </div>
+    <div class="biblio-entry" ptype="Healthcare">
+      <span class="biblio-authors">Núria Correa, Rita Vassena, Jesús Cerquides, Josep Lluis Arcos</span> (2021).
+       <a class="biblio-title" href="https://dx.doi.org/10.3233/FAIA210141">Limits of conventional Machine Learning methods to predict pregnancy and multiple pregnancy after embryo transfer</a>,
+       Artificial Intelligence Research and Development. IOS Press.
+    </div>
+    <div class="biblio-entry" ptype="Journal Healthcare ESHRE">
+      <span class="biblio-authors">Núria Correa, Jesús Cerquides, Josep Lluis Arcos, Rita Vassena</span> (2021).
+       <a class="biblio-title" href="https://doi.org/10.1093/humrep/deab130.636">Development and validation of an Artificial Intelligence algorithm that matches a clinician ability to select the best follitropin dose for ovarian stimulation</a>, Human Reproduction, 36.
+    </div>
+    <div class="biblio-entry" ptype="Healthcare Music Stroke">
+      <span class="biblio-authors">Emma Segura, Jennifer Grau-Sánchez, David Sanchez-Pinsach,  Esther Duarte, Josep Lluis Arcos, Antoni Rodríguez-Fornells</span> (2021).
+      Enriched music-supported therapy in the improvement of motor function and quality of life of chronic stroke patients: a pilot study, Neuromusic VII.
+    </div>
+    <div class="biblio-entry" ptype="Journal Healthcare Music Stroke">
+      <span class="biblio-authors">Jennifer Grau-Sánchez, Emma Segura, David Sanchez-Pinsach, Preeti Raghavan,  Thomas F. Münte,  Anna Marie Palumbo,  Alan Turry,  Esther Duarte,  Särkämö Särkämö, Jesús Cerquides, Josep Lluis Arcos, Antoni Rodríguez-Fornells</span> (2021).
+      <a class="biblio-title" href="https://doi.org/10.1186/s12883-020-02019-1" target="_blank">Enriched Music-supported Therapy for chronic stroke patients: a study protocol of a randomised controlled trial</a>, BMC Neurology, 21.
+    </div>
+    <div class="biblio-entry" ptype="Journal Time-series CBR">
+      <span class="biblio-authors">Mehmet Oğuz Mulâyim, Josep Lluis Arcos</span> (2020).
+      <a class="biblio-title" href="https://doi.org/10.1016/j.knosys.2020.106374" target="_blank">Fast Anytime Retrieval with Confidence in Large-Scale Temporal Case Bases</a>,  Knowledge-Based Systems.
+    </div>
+    <div class="biblio-entry" ptype="Journal SeriousGames Draga">
+      <span class="biblio-authors">Anna Puig, Inmaculada Rodriguez, Josep Lluis Arcos, Juan A. Rodríguez-Aguilar, Sergi Cebrián, Anton Bogdanovych, Núria Morera, Antoni Palomo, Raquel Piqué</span> (2020).
+      <a class="biblio-title" href="https://doi.org/10.1007/s10055-019-00391-z" target="_blank">Lessons Learned from Supplementing Archaeological Museum Exhibitions with Virtual Reality</a>, Virtual Reality, 24(2), pp 342-358.
+    </div>
+    <div class="biblio-entry" ptype="Healthcare Music Stroke">
+      <span class="biblio-authors">David Sanchez-Pinsach, Mehmet Oğuz Mulâyim, Jennifer Grau-Sánchez, Emma Segura, Berta Juan-Corbella, Josep Lluis Arcos, Jesús Cerquides, Monique Messaggi-Sartor, Ester Duarte, Antoni Rodríguez-Fornells</span> (2019).  <a class="biblio-title" href="http://dx.doi.org/10.3233/FAIA190120" target="_blank">Design of an AI Platform to Support Home-Based Self-Training Music Interventions for Chronic Stroke Patients</a>,
+      Artificial Intelligence Research and Development, V. 319, IOS Press, pp 170-175.
+    </div>
+    <div class="biblio-entry" ptype="SeriousGames Draga">
+      <span class="biblio-authors">Inmaculada Rodriguez, Anna Puig, Juan A. Rodríguez-Aguilar, Josep Lluis Arcos, Sergi Cebrián, Anton Bogdanovych, Núria Morera, Raquel Piqué, Antoni Palomo</span> (2019).
+      <a class="biblio-title" href="http://iiia.csic.es/en/node/56331" target="_blank">On the Relationship between Subjective and Objective Measures of Virtual Reality Experiences: a Case Study of a Serious Game</a>, International Symposium on Gamification and Games for Learning (GamiLearn 2019).
+    </div>
+    <div class="biblio-entry" ptype="CBR ICCBR">
+      <span class="biblio-authors">Mehmet Oğuz Mulâyim, Josep Lluis Arcos</span> (2018).
+      <a class="biblio-title" href="https://doi.org/10.1007/978-3-030-01081-2_21" target="_blank">Perks of Being Lazy: Boosting Retrieval Performance</a>, Twenty-Six International Conference on Case-Based Reasoning, ICCBR-2018.
+    </div>
+    <div class="biblio-entry" ptype="SeriousGames Draga">
+      <span class="biblio-authors">Sergi Cebrián, Núria Morera, Joan Anton Barceló, Igor Bogdanovic, Orilo López-Bultó, Ivan Campana, Antoni Palomo, Raquel Piqué, Jordi Revelles, Xavier Terradas, Josep Lluis Arcos, Juan A. Rodríguez-Aguilar, Anton Bogdanovych, Simeon Simoff, Tomas Trescak, Inmaculada Rodríguez, Anna Puig</span> (2018).
+      <a class="biblio-title" href="https://www.iiia.csic.es/en/node/56092">Beyond the Virtual Reconstruction of an Archaeological Settlement</a>, Computer Applications and Quantitative Methods in Archaeology (CAA) International Conference.
+    </div>
+    <div class="biblio-entry" ptype="Healthcare TBI Guttmann">
+      <span class="biblio-authors">David Sanchez-Pinsach, Josep Lluis Arcos, Sara Laxe, Montserrat Bernabeu, Josep Maria Tormos</span> (2017).
+      <a class="biblio-title" href="http://dx.doi.org/10.3233/978-1-61499-806-8-26" target="_blank">Using community detection techniques to discover non-explicit relationships in neurorehabilitation treatments</a>, 20th International Conference of the Catalan Association for Artificial Intelligence.
+    </div>
+
+    <div class="biblio-entry" ptype="SeriousGames Draga">
+      <span class="biblio-authors">Núria Morera, Raquel Piqué, Joan Anton Barceló, Igor Bogdanovic, Oriol López-Bultó, Ivan Campana, Antoni Palomo, Jordi Revelles, Xavier Terradas, Josep Lluis Arcos, Sergi Cebrián, Juan A. Rodríguez-Aguilar</span> (2017).
+      <a class="biblio-title" href="https://www.iiia.csic.es/en/node/56024">The role of the archaeologist when producing a serious game</a>, 23rd Annual Meeting of the European Association of Archaeologists.
+    </div>
+
+    <div class="biblio-entry" ptype="Healthcare Electrodermal Detoxification">
+      <span class="biblio-authors">Elena Ros-Cucurull, Albert Xicola, Raul Felipe Palma-Álvarez, Arturo Ribes, Lara Grau-López, Lissette Lemus, Josep Lluis Arcos, Carlos Roncero</span> (2017).
+      <a class="biblio-title" href="https://www.iiia.csic.es/en/node/56021">Electrodermal activity monitoring on inpatient detoxification unit</a>, 30th ECNP Congress.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal">
+      <span class="biblio-authors">Francisco Salas-Molina, Francisco Martin, Juan A. Rogríguez-Aguilar, Joan Serrà; Josep Lluis Arcos </span> (2017).
+      <a class="biblio-title" href="http://dx.doi.org/10.1016/j.ijforecast.2016.11.002" target="_blank">Empowering cash managers to achieve cost savings by improving predictive accuracy</a>, International Journal of Forecasting, vol. 33, pp. 403-415.
+    </div>
+
+    <div class="biblio-entry" ptype="Time-series">
+      <span class="biblio-authors">Joan Serrà; Aleksandar Matic; Josep Lluis Arcos; Alexandros Karatzoglou </span> (2016).
+      <a class="biblio-title" href="http://dx.doi.org/10.1109/ICDMW.2016.0166" target="_blank">A Genetic Algorithm to Discover Flexible Motifs with Support</a>, IEEE 16th International Conference on Data Mining Workshops, pp. 1153-1158.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Time-series">
+      <span class="biblio-authors">Joan Serrà; Isabel Serra; Álvaro Corral; Josep Lluis Arcos </span> (2016).
+      <a class="biblio-title" href="http://dx.doi.org/10.1016/j.eswa.2016.02.026" target="_blank">Ranking and significance of variable-length similarity-based time series motifs</a>, Expert Systems with Applications, vol. 55, pp. 452-460.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Time-series Swarm">
+      <span class="biblio-authors">Joan Serrà; Josep Lluis Arcos </span> (2016).
+      <a class="biblio-title" href="http://dx.doi.org/10.1016/j.knosys.2015.10.021" target="_blank">Particle Swarm Optimization for Time Series Motif Discovery</a>, Knowledge-Based Systems, vol. 92, pp. 127-137.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Guitar">
+      <span class="biblio-authors">Alfonso Perez-Carrillo; Josep Lluis Arcos; Marcelo Wanderley</span> (2016).
+      <a class="biblio-title" href="https://doi.org/10.1007/978-3-319-46282-0_5" target="_blank">
+        Estimation of Guitar Fingering and Plucking Controls based on Multimodal Analysis of Motion, Audio and Musical Score
+      </a>, Music, Mind and Embodient. 11th International Symposium CMMR 2015. Lecture Notes in Computer Science, N. 9617. Springer-Verlag, p.271-288.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Self-*">
+      <span class="biblio-authors">Ana Peleteiro; Juan C. Burguillo-Rial; Michael Luck; Josep Lluis Arcos; Juan A. Rodríguez-Aguilar</span> (2015).
+      <a class="biblio-title" href="http://dx.doi.org/10.1016/j.engappai.2015.07.009" target="_blank">
+        Using reputation and adaptive coalitions to support collaboration in competitive environments
+      </a>, Engineering Applications of Artificial Intelligence, vol. 45, pp. 325-338, 2015.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal MAS">
+      <span class="biblio-authors">Juan A. Rodríguez-Aguilar; Carles Sierra; Josep Lluis Arcos; Maite López-Sánchez; Inmaculada Rodriguez </span> (2015).
+      <a class="biblio-title" href="http://dx.doi.org/10.1017/S0269888915000090" target="_blank">
+        Towards next generation coordination infrastructures
+      </a>, Knowledge Engineering Review, vol. 30, issue 4.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Time-series">
+      <span class="biblio-authors">Joan Serrà; Josep Lluis Arcos </span> (2014).
+      <a class="biblio-title" href="http://dx.doi.org/10.1016/j.knosys.2014.04.035" target="_blank">
+        An empirical evaluation of similarity measures for time series classification
+      </a>, Knowledge-Based Systems, vol. 67, pp. 305-314.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Time-series Music">
+      <span class="biblio-authors">Joan Serrà; Meinard Müller; Peter Grosche; Josep Lluis Arcos </span> (2014).
+      <span><a class="biblio-title" href="http://dx.doi.org/10.1109/TMM.2014.2310701" target="_blank">Unsupervised music structure annotation by time series structure features and segment similarity</a></span>,
+      IEEE Trans. on Multimedia, Special Issue on Music Data Mining, vol. 16, issue 5, pp. 1229-1240.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Self-*">
+      <span class="biblio-authors">Ana Peleteiro; Juan C. Burguillo-Rial; Josep Lluis Arcos; Juan A. Rodríguez-Aguilar</span> (2014).
+      <span><a class="biblio-title" href="http://doi.acm.org/10.1145/2567928" target="_blank">Fostering cooperation through dynamic coalition formation and partner switching</a></span>, ACM Transactions on Autonomous and Adaptive Systems, vol. 1, issue 9.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music Guitar">
+      <span class="biblio-authors"> Joan Serrà; Tan Hakan Ozaslan; Josep Lluis Arcos </span> (2013).
+      <span><a class="biblio-title" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0069268" target="_blank">Note onset deviations as musical piece signatures</a></span>, PLoS ONE, Vol. 8, Issue 7.
+    </div>
+
+    <div class="biblio-entry" ptype="Healthcare TBI Awards Guttmann">
+      <span class="biblio-authors">Joan Serrà; Josep Lluis Arcos; Alejandro Garcia-Rudolph; Alberto García-Molina; Teresa Roig; Josep Maria Tormos </span> (2013).
+      <span><a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/54476.pdf" target="_blank">
+        Cognitive prognosis of acquired brain injury patients using machine learning techniques
+      </a></span>, Int. Conf. on Advanced Cognitive Technologies and Applications (COGNITIVE), pp. 108-113.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Self-*">
+      <span class="biblio-authors">José Luis Fernández; Giovanna di Marzo Serugendo; Sara Montagna; Mirko Viroli; Josep Lluis Arcos </span> (2013).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/s11047-012-9324-y" target="_blank">Description and composition of bio-inspired design patterns: a complete overview</a></span>, Natural Computing.
+    </div>
+
+    <div class="biblio-entry" ptype="Music">
+      <span class="biblio-authors">Joan Serrà; Álvaro Corral; Marián Boguñá; Martín Haro; Josep Lluis Arcos </span> (2013).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54478">
+        Measuring quantitative trends in western popular music
+      </a></span>, CRM-Imperial College Workshop in Complex Systems.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music Guitar">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Guaus; Tan H. Ozaslan </span> (2013).
+      <span><a class="biblio-title" href="http://dx.doi.org/10.1016/j.fss.2012.01.019" target="_blank">Analyzing musical expressivity with a soft computing approach</a></span>, Fuzzy Sets and Systems, vol 214, pp. 65-74.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music CBR">
+      <span class="biblio-authors">Ramon López de Mántaras; Josep Lluis Arcos </span> (2012).
+      <a class="biblio-title" href="http://www.aaai.org/ojs/index.php/aimagazine/article/view/2405/2329" target="_blank">
+        Playing with Cases: Rendering Expressive Music with Case-Based Reasoning
+      </a>, AI Magazine, vol 33, issue 4, pp. 22-31.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Dissemination">
+      <span class="biblio-authors">Joan Serrà; Josep Lluis Arcos </span> (2012).
+      <a class="biblio-title" href="http://www.nytimes.com/2012/09/16/opinion/sunday/the-computer-as-music-critic.html?_r=0" target="_blank">
+        The computer as music critic
+      </a>, The New York Times.
+    </div>
+
+    <div class="biblio-entry" ptype="Dissemination Healthcare SeriousGames">
+      <span class="biblio-authors">Josep Blat; Josep Lluis Arcos; Sergio Sayago </span> (2012).
+      <a class="biblio-title" href="http://www.fgcsic.es/lychnos/es_es/articulos/WorthPlay-juegos-digitales-para-un-envejecimiento-activo-y-saludable" target="_blank">
+        WorthPlay: juegos digitales para un envejecimiento saludable
+      </a>, LYCHNOS, N.8, pp 14-21.
+    </div>
+
+    <div class="biblio-entry" ptype="Music ISMIR">
+      <span class="biblio-authors">Tan H. Ozaslan; Xavier Serra; Josep Lluis Arcos </span> (2012).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/54565.pdf" target="_blank">
+        Characterization of Embellishments in Ney Performances of Makam Music in Turkey
+      </a>, 13th International society for Music Information Retrieval Conference (ISMIR 2012).
+    </div>
+
+    <div class="biblio-entry" ptype="Music ISMIR">
+      <span class="biblio-authors">Peter Grosche; Joan Serrà; Meinard Müller; Josep Lluis Arcos </span> (2012).
+      <span><a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/54558.pdf" target="_blank">Structure-based audio fingerprinting for music retrieval</a></span>,
+      13th International society for Music Information Retrieval Conference (ISMIR 2012).
+    </div>
+
+    <div class="biblio-entry" ptype="Music ISMIR Awards">
+      <span class="biblio-authors">Joan Serrà; Meinard Müller; Peter Grosche; Josep Lluis Arcos </span> (2012).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54574">The importance of detecting boundaries in music structure annotation</a></span>,
+       Music Information Retrieval Evaluation eXchange (MIREX).
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ICCBR">
+      <span class="biblio-authors">Santiago Ontañon; Josep Lluis Arcos; Josep Puyol-Gruart; Eusebio Carasusan; Daniel Giribet; David de la Cruz; Ismel Brito; Carlos López de Toro </span> (2012).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-642-32986-9_23" target="_blank">GENA: A Case-Based Approach to the Generation of Audio-visual Narratives</a></span>, Case-Based Reasoning Research and Development, 20th International Conference, Lecture Notes in Artificial Intelligence, vol. 7466, pp. 297-311.
+    </div>
+
+    <div class="biblio-entry" ptype="Time-series ICCBR">
+      <span class="biblio-authors">Joan Serrà; Josep Lluis Arcos </span> (2012).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-642-32986-9_31" target="_blank">A competitive measure to assess the similarity between two time series</a></span>, Case-Based Reasoning Research and Development, 20th International Conference, Lecture Notes in Artificial Intelligence, vol. 7466, pp. 414-427.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Time-series AAAI">
+      <span class="biblio-authors">Joan Serrà; Meinard Müller; Peter Grosche; Josep Lluis Arcos </span> (2012).
+      <span><a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/54534.pdf" target="_blank">Unsupervised detection of music boundaries by time series structure features</a></span>, AAAI Conference on Artificial Intelligence, Toronto, Canada, AAAI Press, pp. 1613-1619.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music">
+      <span class="biblio-authors">Joan Serrà; Álvaro Corral; Marián Boguñá; Martín Haro; Josep Lluis Arcos </span> (2012).
+      <span><a class="biblio-title" href="https://www.nature.com/articles/srep00521" target="_blank">Measuring the evolution of contemporary western popular music</a></span>, Scientific Reports, vol. 2: Nature, pp. 521.
+    </div>
+
+    <div class="biblio-entry" ptype="Music">
+      <span class="biblio-authors">Joan Serrà; Álvaro Corral; Marián Boguñá; Martín Haro; Josep Lluis Arcos </span> (2012).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54544">Patterns, regularities, and evolution of contemporary popular music</a></span>, Complexitat.Cat.
+    </div>
+
+    <div class="biblio-entry" ptype="Music">
+      <span class="biblio-authors">Joan Serrà; Álvaro Corral; Marián Boguñá; Martín Haro; Josep Lluis Arcos </span> (2012).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54546">Quantifying the evolution of popular music</a></span>, No Lineal.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Self-*">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos; Giovanna di Marzo Serugendo </span> (2012).
+      <span><a class="biblio-title" href="https://ieeexplore.ieee.org/document/5630068" target="_blank">A Decentralised Approach for Detecting Dynamically Changing Diffuse Event Sources in Noisy WSN Environments</a></span>, Applied Artificial Intelligence, vol. 26, issue 4, pp. 376-397.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Guitar">
+      <span class="biblio-authors">Josep Lluis Arcos</span> (2012).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-642-24672-2_24" target="_blank">Music And Similarity-Based Reasoning</a>, </span> Soft Computing in Humanities and Social Sciences, vol. 273. Spriger-Verlag, pp.467-478.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-*">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos; Giovanna di Marzo Serugendo; Mirko Viroli; Sara Montagna </span> (2011).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54623">Description and composition of bio-inspired design patterns: the gradient case</a></span>, ACM workshop on Biologically inspired algorithms for distributed systems (BADS'11), pp. 25-32.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-*">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos; Giovanna di Marzo Serugendo; Matteo Casadei</span> (2011).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54624">Description and Composition of Bio-Inspired Design Patterns: the Gossip Case</a></span>, 8th IEEE Conference on Engineering of Autonomic and Autonomous Systems (EASe 2011).
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* AAMAS">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos;  Ana Peleteiro; Juan C. Burguillo-Rial</span> (2011).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/4317.pdf" target="_blank">
+        Emerging Cooperation on Complex Networks
+      </a>, AAMAS '11: Proceedings of the 10th international joint conference on Autonomous agents and multiagent systems, pp. 669-676.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS AAMAS">
+      <span class="biblio-authors">Marc Esteva; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos;  Carles Sierra</span> (2011).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54629">Socially-aware lightweight coordination infrastructures</a></span>, AAMAS'11 12th International Workshop on Agent-Oriented Software Engineering, pp. 117-128.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Self-*">
+      <span class="biblio-authors">José Luis Fernández; Giovanna di Marzo Serugendo; Josep Lluis Arcos </span> (2011).
+      <span><a class="biblio-title" href="https://dl.acm.org/citation.cfm?id=1968518" target="_blank">Infrastructureless Spatial Storage Algorithms</a></span>, ACM Transactions on Autonomous and Adaptive Systems, Vol 6, N. 2.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Guitar">
+      <span class="biblio-authors">Tan Hakan Ozaslan; Enric Guaus; Eric Palacios; Josep Lluis Arcos</span> (2011).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-642-23126-1_15" target="_blank">Identifying Attack Articulations in Classical Guitar</a>, </span>Computer Music Modeling and Retrieval. Exploring Music Contents. Lecture Notes in Computer Science, vol. 6684: Spriger-Verlag, pp. 219-241.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Introspection">
+      <span class="biblio-authors">Josep Lluis Arcos; Oguz Mulayim; David Leake </span> (2011).
+      <span><a class="biblio-title" href="https://doi.org/10.7551/mitpress/9780262014809.003.0011" target="_blank">Using Introspective Reasoning to Improve CBR System Performance</a></span>, Metareasoning: Thinking about Thinking: MIT Press, pp. 167-182.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/MIT-MetaReasoning-ch11.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Self-*">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2010).
+      <span><a class="biblio-title" href="https://content.iospress.com/articles/ai-communications/aic479" target="_blank">Robust Coordination in Large Convention Spaces</a></span>, AI Communications, vol. 23, issue 4: IOS Press, pp. 357-372.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* SASO">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2010).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54749">Self-Configuring Sensors for Uncharted Environments</a></span>, IEEE International Conference on Self-Adaptive and Self-Organizing Systems SASO'10, p.134-143.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-*">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2010).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-642-14962-7_18" target="_blank">An Infection-Based Mechanism in Large Convention Spaces</a></span>, Coordination, Organizations, Institutions, and Norms in Agent Systems V. Lecture Notes in Artificial Intelligence, N. 6069. Springer-Verlag, p. 273-288.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* ECAI">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2010).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54714">Collective Sensor Configuration in Uncharted Environments</a></span>, 19th European Conference on Artificial Intelligence (ECAI 2010), p. 1029-1030.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* AAMAS">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2010).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54689">Convention emergence through spreading mechanisms</a></span>, 9th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2010), p. 1431-1432.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Guitar">
+      <span class="biblio-authors">Enric Guaus; Josep Lluis Arcos</span> (2010).
+      <a class="biblio-title" href="https://www.iiia.csic.es/~arcos/papers/3847.pdf" target="_blank">
+        Analyzing left hand fingering in guitar playing
+      </a>, 7th Sound and Music Computing Conference (SMC-2010), pp. 284-290.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Guitar">
+      <span class="biblio-authors">Tan Hakan Ozaslan; Josep Lluis Arcos</span> (2010).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54711">Legato and Glissando identification in Classical Guitar</a>, </span> 7th Sound and Music Computing Conference (SMC-2010), pp. 457-463.  [<a href="http://www.iiia.csic.es/~arcos/papers/3846.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Music Guitar">
+      <span class="biblio-authors">Tan Hakan Ozaslan; Enric Guaus; Eric Palacios; Josep Lluis Arcos</span> (2010).
+      <a class="biblio-title" href="https://www.iiia.csic.es/~arcos/papers/3842.pdf" target="_blank">
+        Attack Based Articulation Analysis of Nylon String Guitar
+      </a>, 7th International Symposium on Computer Music Modeling and Retrieval (CMMR-2010), pp. 285-297.
+    </div>
+
+    <div class="biblio-entry" ptype="Music Guitar">
+      <span class="biblio-authors">Enric Guaus; Tan Hakan Ozaslan; Eric Palacios; Josep Lluis Arcos</span> (2010).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/3841.pdf" target="_blank">
+        A Left Hand Gesture Caption System for Guitar Based on Capacitive Sensors
+      </a>, International Conference on New Interfaces for Musical Expression (NIME-2010), pp. 238-243.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* Swarm">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos </span> (2010).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54709">Adapting Particle Swarm Optimization in Dynamic and Noisy Environments</a></span>, IEEE Conference on Evolutionary Computation (IEEE CEC), pp. 765-772.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR AAAI">
+      <span class="biblio-authors">Albert Vilamala; Enric Plaza; Josep Lluis Arcos </span> (2010).</span>
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54710">Learning from Sensors and Past Experience in an Autonomous Oceanographic Probe</a>,  Twenty-Second Conference on Innovative Applications of Artificial Intelligence Conference (IAAI-10), pp. 1859-1864.</span>
+    </div>
+
+    <div class="biblio-entry" ptype="Self-*">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos; Giovanna Di Marzo Serugendo </span> (2010).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54678">Infrastructureless Storage in Dynamic Environments</a></span>, ACM Symposium on Applied Computing, SAC-2010, pp. 1334-1338.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music">
+      <span class="biblio-authors">Miguel Molina-Solana; Josep Lluis Arcos; Emilia Gómez </span> (2010).
+      <span><a class="biblio-title" href="https://dl.acm.org/citation.cfm?id=1859244" target="_blank">Identifying Violin Performers by their Expressive Trends</a></span>,
+      Intelligent Data Analysis, Volume 14, Issue 5, p.555-571.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR">
+      <span class="biblio-authors">Oguz Mulayim; Josep Lluis Arcos</span> (2010).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/3034.pdf" target="_blank">
+        Predicting Dubiosity in CBR Systems
+      </a>, Expert UPDATE, Vol.10(2), pp. 1-8.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* SASO">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2009).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/3430.pdf" target="_blank">
+        Handling Uncertainty in the Emergence of Social Conventions
+      </a>, Third IEEE International Conference on Self-Adaptive and Self-Organizing Systems SASO'09, p. 282-283.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-*">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2009).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/3429.pdf" target="_blank">
+        An Infection-Based Mechanism in Large Convention Spaces
+      </a>, Eighth Workshop on Coordination, Organizations, Institutions, and Norms in Agent Systems COIN'09, p.83-97.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* Swarm">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos </span> (2009).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55285">An Evaporation Mechanism for Dynamic and Noisy Multimodal Optimization</a></span>, Proceedings of the 10th Genetic and Evolutionary Computation Conference (GECCO-09), pp. 17-24.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal CBR Robotics">
+      <span class="biblio-authors">Raquel Ros; Josep Lluis Arcos; Ramon López de Mántaras; Manuela Veloso </span> (2009).
+      <span><a class="biblio-title" href="https://doi.org/10.1016/j.artint.2009.02.004" target="_blank">A Case-Based approach for Coordinated Action Selection in Robot Soccer</a></span>,
+      Artificial Intelligence, Vol. 173, pp. 1014-1039.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* Swarm">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos </span> (2009).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55275">Keeping Diversity when Exploring Dynamic Environments</a></span>, ACM Symposium on Applied Computing, SAC-2009, p.1192-1196.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-*">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2008).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54841">Engineering Self-Adaptation in Agent Societies:An Infection-Based Mechanism Overview</a></span>, European Workshop on Multi-agent Systems (EUMAS-2008), Bath, UK.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* SASO">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2947.pdf" target="_blank">
+        An infection-based mechanism for self-adaptation in multi-agent complex networks
+      </a>, 2nd International Conference on Self-Adaptive and Self-Organizing Systems, SASO 2008, p.161-170.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* Swarm SASO">
+      <span class="biblio-authors">José Luis Fernández; Josep Lluis Arcos </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2943.pdf" target="_blank">
+        Evaporation as a self-adaptation mechanism for PSO
+      </a>, 2nd IEEE International Conference on Self-Adaptive and Self-Organizing Systems, SASO 2008, p.465-466.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-* ECAI">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2945.pdf" target="_blank">
+        Infection-Based Norm Emergence in Multi-Agent Complex Networks
+      </a>, 18th European Conference on Artificial Intelligence (ECAI), p.891-892.
+    </div>
+
+    <div class="biblio-entry" ptype="Self-*">
+      <span class="biblio-authors">Norman Salazar-Ramirez; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2946.pdf" target="_blank">
+        Infection-based self-configuration in agent societies
+      </a>, GECCO workshop on Evolutionary Computation and Multi-agent Systems and Simulation, p.1945-1952.
+    </div>
+
+    <div class="biblio-entry" ptype="Music ISMIR">
+      <span class="biblio-authors">Miguel Molina-Solana; Josep Lluis Arcos; Emilia Gómez </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2964.pdf" target="_blank">
+        Using expressive trends for identifying violin performers
+      </a>, International Conference on Music Information Retrieval, ISMIR&#039;08, p.495-500.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ECCBR">
+      <span class="biblio-authors">Belén Díaz-Agudo; Enric Plaza; Juan A. Recio-García; Josep Lluis Arcos </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/3004.pdf" target="_blank">
+        Noticeably New: Case Reuse in Originality-Driven Tasks
+      </a>, Advances in Case-Based Reasoning: 9th European Conference, ECCBR 2008. Lecture Notes in Artificial Intelligence, Volume 5239, Trier, Germany, p.165-179.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ECCBR">
+      <span class="biblio-authors">Oguz Mulayim; Josep Lluis Arcos </span> (2008).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-540-85502-6_26">Understanding Dubious Future Problems</a></span>, Advances in Case-Based Reasoning: 9th European Conference, ECCBR 2008. Lecture Notes in Artificial Intelligence, Volume 5239, Trier, Germany, p.385-399.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Introspection AAAI">
+      <span class="biblio-authors">Josep Lluis Arcos; Oguz Mulayim; David Leake </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2907.pdf" target="_blank">
+        Using Introspective Reasoning to Improve CBR System Performance
+      </a>, AAAI Metareasoning Workshop, p.21-28.
+    </div>
+
+    <div class="biblio-entry" ptype="Music">
+      <span class="biblio-authors">Miguel Molina-Solana; Josep Lluis Arcos; Emilia Gómez </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2940.pdf" target="_blank">
+        Learning Violinist&#039;s Expressive Trends
+      </a>, International Workshop on Machine Learning and Music.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS AAMAS">
+      <span class="biblio-authors">Marc Esteva; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos; Carles Sierra; Pablo Noriega; Bruno Rosell; David de la Cruz </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2910.pdf" target="_blank">
+        Electronic Institutions Development Environment
+      </a>, 7th International Joint Conference on Autonomous Agents and Multiagent Systems (AAMAS 08), p.1657-1658.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Juan A. Rodríguez-Aguilar; Bruno Rosell </span> (2008).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2908.pdf" target="_blank">
+        Engineering Autonomic Electronic Institutions
+      </a>, Engineering Environment.Mediated Multi-Agent Systems IV. Lecture Notes in Artificial Intelligence, Vol. 5049, p.76-87. Springer-Verlag.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Esteve Acebo; Josep Lluis Arcos; Josep Lluis Marzo </span> (2007).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55050">Artificial Social Intelligence in MAS: from swarms to electronic institutions</a></span>, Issues in Multi-Agent Systems: The AgentCities.ES Experience, p.145-177.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR">
+      <span class="biblio-authors">Oguz Mulayim; Josep Lluis Arcos </span> (2007).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2808.pdf" target="_blank">
+        Exploring Dubious Future Problems
+      </a>, Twelfth UK Workshop on Case-Based Reasoning, p.52-63.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Juan A. Rodríguez-Aguilar; Bruno Rosell </span> (2007).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2783.pdf" target="_blank">
+        Engineering Autonomic Electronic Institutions
+      </a>, Proceedings of the Engineering Environment-Mediated Multiagent Systems Workshop. Satellite Conference at The European Conference on Complex Systems (ECCS 2007), p.45-52.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ICCBR Robotics">
+      <span class="biblio-authors">Raquel Ros; Ramon López de Mántaras; Josep Lluis Arcos; Manuela Veloso </span> (2007).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-540-74141-1_4" target="_blank">Team Playing Behavior in Robot Soccer: A Case-Based Approach</a></span>, Lecture Notes in Artificial Intelligence, Volume 4626, p.46-60.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Robotics AAAI">
+      <span class="biblio-authors">Raquel Ros; Manuela Veloso; Ramon López de Mántaras; Carles Sierra; Josep Lluis Arcos </span> (2007).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2736.pdf" target="_blank">
+        Beyond Individualism: Modeling Team Playing Behavior in Robot Soccer through Case-Based Reasoning
+      </a>, AAAI-07 22d AAAI Conference on Artificial Intelligence, Vancouver, Canada, p.1671-1674.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR">
+      <span class="biblio-authors">Ramon López de Mántaras; Maarten Grachten; Josep Lluis Arcos </span> (2007).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2853.pdf" target="_blank">
+        Playing with cases: Tempo Transformations of Jazz Performances using Case-Based Reasoning
+      </a>, 20th FLAIRS Conference, Key West, Florida, p.8-11.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Pablo Noriega; Juan A. Rodríguez-Aguilar; Carles Sierra </span> (2007).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-540-71103-2_11" target="_blank">E4Mas through Electronic Institutions</a></span>, Environments for Multi-Agent Systems. Lecture Notes in Artificial Intelligence, Volume 4389, p.184-202.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2843.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Robotics IJCAI">
+      <span class="biblio-authors">Raquel Ros; Josep Lluis Arcos </span> (2007).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2764.pdf" target="_blank">
+        Acquiring a Robust Case Base for the Robot Soccer Domain
+      </a>, Proceedings of the 20th International Joint Conference on Artificial Intelligence (IJCAI 2007), p.1029-1034.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR">
+      <span class="biblio-authors">Ramon López de Mántaras; Maarten Grachten; Josep Lluis Arcos </span> (2007).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-540-69912-5_1" target="_blank">Expressivity-preserving Tempo Transformation for Music - A case.based approach</a></span>, Lecture Notes in Artificial Intelligence, Volume 4314, p.1-6.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2761.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music CBR">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2006).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/s10994-006-9025-9" target="_blank">A case based approach to expressivity-aware tempo transformation</a></span>, Machine Learning, Volume 65, Number 2-3, p.411-437.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2711.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Awards CBR Robotics ECCBR">
+      <span class="biblio-authors">Raquel Ros; Manuela Veloso; Ramon López de Mántaras; Carles Sierra; Josep Lluis Arcos</span> (2006).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/11805816_6" target="_blank">Retrieving and Reusing Game Plays for Robot Soccer</a></span>, Lecture Notes in Artificial Intelligence, Volume 4106, p.47-61.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2699.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR AAAI">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2006).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2721.pdf" target="_blank">
+        TempoExpress: An expresivity-preserving musical tempo transformation system
+      </a>, 21st National Conference on Artificial Intelligence (AAAI-06), Boston, USA, 16-20 July 2006, Volume 2, p.1609-1612.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Marc Esteva; Pablo Noriega; Juan A. Rodríguez-Aguilar; Carles Sierra</span> (2005).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2583.pdf" target="_blank">
+        An integrated developing environment for electronic institutions
+      </a>, Software Agent based Applications. Platforms and Development Kits, p.121 - 142.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Robotics">
+      <span class="biblio-authors">Raquel Ros; Ramon López de Mántaras; Carles Sierra; Josep Lluis Arcos</span> (2005).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-44527-7_35" target="_blank">A CBR system for autonomous robot navigation</a></span>, Frontiers in Artificial Intelligenge and Applications, Number 131, p.299 - 306.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2548.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Journal MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Marc Esteva; Pablo Noriega; Juan A. Rodríguez-Aguilar; Carles Sierra</span> (2005).
+      <span><a class="biblio-title" href="https://doi.org/10.1016/j.engappai.2004.11.019" target="_blank">Engineering open evironments with electronic institutions</a></span>, Engineering applications of artificial intelligence, Volume 18, Number 2, p.191 - 204.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2584.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Music">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2005).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-540-31807-1_25" target="_blank">Evolutionary optimization of music performance annotation</a></span>, Lecture Notes in Computer Science, Volume 3310, p.347 - 358.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2622.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Music ISMIR Awards">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2005).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2621.pdf" target="_blank">
+        Melody retrieval using the Implication/Realization Model
+      </a>,6th Inter. Conf. On Music information retrieval. ISMIR 2005.
+      ( First prize of the MIREX Symbolic Melodic Similarity Contest).
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ICCBR">
+      <span class="biblio-authors">Maarten Grachten; Alejandro García-Otero; Josep Lluis Arcos</span> (2005).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/11536406_23" target="_blank">Navigating Through Case Base Competence</a></span>, Lecture Notes in Computer Science, Volume 3620, p.282 - 295.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2512.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="MAS AAMAS">
+      <span class="biblio-authors">Marc Esteva; Bruno Rosell; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos</span> (2004).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2458.pdf" target="_blank">
+        AMELI: An agent-based middleware for electronic institutions
+      </a>, AAMAS 2004. Third international joint conference on autonomous agents and multiagent systems, Volume I, Number 3th, p.236-243.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Carles Sierra; Juan A. Rodríguez-Aguilar; Pablo Noriega; Marc Esteva; Josep Lluis Arcos</span> (2004).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2499.pdf" target="_blank">
+        Engineering multi-agent systems as electronic institutions
+      </a>, UPGRADE The European Journal for the Informatics Professional, Volume V, Number 4, p.33-39.
+    </div>
+
+    <div class="biblio-entry" ptype="Music ISMIR">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2004).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2465.pdf" target="_blank">
+        Melodic Similarity: Looking for a Good Abstraction Level
+      </a>, ISMIR 2004: 5th International Conference on Music Information Retrieval, p.210-215.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR ECCBR">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2004).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2468.pdf" target="_blank">
+        TempoExpress, a CBR Approach to Musical Tempo Transformations
+      </a>, In Advances in Case-Based Reasoning, Lecture Notes in Artificial Intelligence, Volume 3155, p.601-615.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ECCBR">
+      <span class="biblio-authors">Josep Lluis Arcos</span> (2004).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-540-28631-8_34" target="_blank">Improving the Quality of Solutions in Domain Evolving Environments</a></span>, Lecture Notes in Artificial Intelligence, Number 3155, p.464-475.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2464.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Time-series ECCBR">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos</span> (2004).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2466.pdf" target="_blank">
+        Music Performance Generation as Time Series Prediction
+      </a>, Proceedings of the ECCBR 2004 Workshops, p.329-336.
+    </div>
+
+    <div class="biblio-entry" ptype="Music ECAI">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos</span> (2004).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2467.pdf" target="_blank">
+        Using the Implication/Realization Model for Measuring Melodic Similarity
+      </a>, 16th European Conference on Artificial Intelligence, ECAI 2004., p.1023-1024.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music">
+      <span class="biblio-authors">Xavier Amatriain; Jordi Bonada; Àlex Loscos; Josep Lluis Arcos; Vincent Verfaille</span> (2003).
+      <span><a class="biblio-title" href="https://doi.org/10.1076/jnmr.32.1.95.16800" target="_blank">Content-Based Transformations</a></span>, Journal of New Music Research, Volume 32, Number 1, p.95-114.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR IJCAI">
+      <span class="biblio-authors">Josep Lluis Arcos</span> (2003).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55557">Development of an Industrial Design Support system for Air Pollution Treatment</a></span>,
+      IJCAI&#039;03 Workshop on Enviromental Decision Support Systems, p.1-8.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR ICCBR Awards">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras; Maarten Grachten</span> (2003).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-45006-8_5" target="_blank">Extracting performers&#039; behaviors to annotate cases in a CBR system for musical tempo transformations</a></span>, Lecture Notes in Artificial Intelligence, Volume 2689, p.20-34.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2379.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ICCBR">
+      <span class="biblio-authors">Josep Lluis Arcos</span> (2003).
+      <a class="biblio-title" href="http://www.iiia.csic.es/~arcos/papers/2386.pdf" target="_blank">
+        Innovation awareness in case-based reasoning systems
+      </a>, ICCBR&#039;03 Workshop Proceedings, p.97-104.
+    </div>
+
+    <div class="biblio-entry" ptype="Music">
+      <span class="biblio-authors">Emilia Gómez; Maarten Grachten; Xavier Amatriain; Josep Lluis Arcos</span> (2003).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55551">Melodic Characterization of monophonic Recordings for Expressive Tempo Transformations</a></span>, Stockholm Music Acoustics Conferences (SMAC&#039;03), Volume II, p.533 - 536.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Marc Esteva; Bruno Rosell; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos</span> (2003).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54889">Social layer middleware for electronic institutions</a></span>, The first european workshop on multi-agent systems.
+    </div>
+
+    <div class="biblio-entry" ptype="Music IJCAI">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2003).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55558">Tempo-Express: tempo transformations preserving musical expression</a></span>,
+      IJCAI'03 Workshop on Methods for Automatic Music Performance and their Applications in a Public Rendering Contest, p.32-36.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music CBR SaxEx">
+      <span class="biblio-authors">Ramon López de Mántaras; Josep Lluis Arcos</span> (2002).
+      <span><a class="biblio-title" href="https://doi.org/10.1609/aimag.v23i3.1656" target="_blank">AI and Music: From Composition to Expressive Performance</a></span>, AI Magazine, Volume 23, Number 3, p.43-57.
+    </div>
+
+    <div class="biblio-entry" ptype="Music">
+      <span class="biblio-authors">Maarten Grachten; Josep Lluis Arcos; Ramon López de Mántaras</span> (2002).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55604">A comparison of different approaches to melodic similarity</a></span>, Music and artificial intelligence: Second international conference, ICMAI 2002, Edinburgh, Scotland, UK, September 12-14.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras</span> (2002).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/978-3-7908-1797-3_2" target="_blank">Combining Fuzzy and Case-Based Reasoning to Generate Human-like Music Performances</a></span>, Studies in Fuzziness and Soft Computing, Volume 29, p.21-32.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2335.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Journal MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (2002).
+      <span><a class="biblio-title" href="https://doi.org/10.1142/S0218843002000583" target="_blank">Context-Aware Personal Information Agents</a></span>, International Journal on Cooperative Information Systems, Volume 11, Number 3, p.245-264.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ECCBR">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (2002).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-46119-1_23" target="_blank">Constructive adaptation</a></span>, Lecture Notes in Artificial Intelligence, Volume 2416, p.306-320.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2295.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="CBR">
+      <span class="biblio-authors">Chema Abasolo; Enric Plaza; Josep Lluis Arcos</span> (2002).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-36079-4_1" target="_blank">Components for Case-Based Reasoning Systems</a></span>, Lecture Notes in Artificial Intelligence, Number 2504, p.1-16.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal CBR">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras</span> (2001).
+      <span><a class="biblio-title" href="https://doi.org/10.1023/A:1008311209823" target="_blank">An interactive case-based reasoning approach for generating expressive music</a></span>, Applied Intelligence, Volume 14, Number 1, p.115-129.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos</span> (2001).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-44799-7_7" target="_blank">Context aware agents for personal information services</a></span>, Lecture notes in artificial intelligence, Volume 2182, p.44-55.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (2001).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55653">Exploiting context awareness in information agents</a></span>, 5th International Conference on Autonomous Agents, p.116-117.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Marc Esteva; Juan A. Rodríguez-Aguilar; Carles Sierra; Pere García; Josep Lluis Arcos</span> (2001)
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-44682-6_8">On the formal specification of electronic institutions</a></span>, Lecture notes in artificial intelligence, Volume 1991, p.126-147.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2223.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="CBR ICCBR">
+      <span class="biblio-authors">Josep Lluis Arcos</span> (2001).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-44593-5_40" target="_blank">T-Air : a case-based reasoning sytem for designing chemical absorption plants</a></span>, Lecture Notes in Artificial Intelligence, Volume 2080, p.576-588.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR ICCBR SaxEx">
+      <span class="biblio-authors">Ramon López de Mántaras; Josep Lluis Arcos</span> (2001).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-44593-5_2" target="_blank">The synthesis of expressive music : a challenging CBR application</a></span>, Lecture Notes in Artificial Intelligence, Volume 2080, p.16-25.
+      [<a href="http://www.iiia.csic.es/~arcos/papers/2220.pdf">PDF</a>]
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras</span> (2001).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55622">The SaxEx system for expressive music synthesis : a progress report</a></span>, Workshop on Current Research Directions in Computer Music, p.17-22.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras</span> (2000).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55659">Combining AI Techniques to Perform Expressive Music by Imitation</a></span>, Artificial Intelligence and Music: Towards formal models for composition, performance and analysis, p.41-47.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Marc Esteva; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos; Carles Sierra; Pere García</span> (2000).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54897">Formalising Agent Mediated Electronic Institutions</a></span>, Congrès Català d&#039;Intel.ligència Artificial, p.329-338.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Marc Esteva; Juan A. Rodríguez-Aguilar; Josep Lluis Arcos; Carles Sierra; Pere García</span> (2000).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/54896">Institutionalising Open Multi-Agent Systems. A Formal Approach</a></span>, Fourth International Conference on MultiAgent Systems (ICMAS&#039;00), p.381-382.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos</span> (2000).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-39963-1_63" target="_blank">Towards a software architecture for case-based reasoning systems</a></span>, Foundations of Intelligent Systems. Lecture Notes in Artificial Intelligence, Volume 1932, p.601-609.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR ICCBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Dolores Cañamero; Ramon López de Mántaras</span> (1999).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-48508-2_1" target="_blank">Affect-Driven CBR to generate expressive music</a></span>, Lecture Notes in Artificial Intelligence, Volume 1650, p.1-13.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx">
+      <span class="biblio-authors">Dolores Cañamero; Josep Lluis Arcos; Ramon López de Mántaras</span> (1999).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55670">Imitating human performances to automatically generate expressive jazz ballads</a></span>, AISB&#039;99 Symposium on imitation in animals and artifacts, p.115-120.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal CBR MAS">
+      <span class="biblio-authors">Francisco Martin; Enric Plaza; Josep Lluis Arcos</span> (1999).
+      <span><a class="biblio-title" href="https://doi.org/10.1142/S0218194099000206" target="_blank">Knowledge and experience reuse through communication among competent (peer) agents</a></span>, International Journal of Software Engineering and Knowledge Engineering, Volume 9, Number 3, p.319-341.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Dolores Cañamero; Ramon López de Mántaras</span> (1998).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55684">Affect-driven generation of expressive musical performances</a></span>, AAAI&#039;98 Fall Symposium on Emotional and Intelligent, p.1-6.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal MAS">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos; Pablo Noriega; Carles Sierra</span> (1998).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/BF01321177" target="_blank">Competing Agents in Agent-Mediated Institutions</a></span>, Journal of Personal Technologies, Number 2, p.212-220.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal Music CBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras; Xavier Serra</span> (1998).
+      <span><a class="biblio-title" href="https://doi.org/10.1080/09298219808570746" target="_blank">Generating expressive musical performances with SaxEx</a></span>,
+      Journal of New Music Research, Volume 27, Number 3, p.194-210.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (1998).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55681">Instituting Interactions Among Agents</a></span>, First Int. Workshop on Interaction Agents, p.8-14.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (1998).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55681">Instituting Interactions Among Agents</a></span>, Proceedings of the &quot;Primer Congrés Català d&#039;Intel.ligència Artificial (CCIA&#039;98), p.154-162.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx AAAI">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras; Xavier Serra</span> (1998).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55685">Integrating background musical knowledge in a CBR system for generating expressive musical performances</a></span>, AAAI&#039;98 Workshop on CBR Integrations, p.12-16.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos Introspection">
+      <span class="biblio-authors">Josep Lluis Arcos</span> (1998).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55024">The Noos Representation Language</a></span>, Monografies del IIIA - CSIC, Volume 6.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR">
+      <span class="biblio-authors">Jordi Sabater-Mir; Josep Lluis Arcos; Ramon López de Mántaras</span> (1998).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55680">Using Rules to support Case-based Reasoning for harmonizing melodies</a></span>, AAAI Apring Symposium on Multimodal Reasoning, p.147-151.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS CBR">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos; Francisco Martin</span> (1997).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-62934-3_49" tartget="_blank">Cooperative Case-Based Reasoning</a></span>, Artificial Intelligence Meets Machine Learning. Lecture Notes in Artificial Intelligence, Volume 1221, p.180-201.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras; Xavier Serra</span> (1997).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55218">Generating expressive musical performances with SaxEx</a></span>, International Workshop Kansei Technology of Emotion AIMI&#039;97, p.147-152.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (1997).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55696">NOOS: an integrated framework for problem solving and learning</a></span>, KEML-97 Workshop on Knowledge Engineering Methods and Languages.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR ICCBR SaxEx">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras</span> (1997).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-63233-6_499" target="_blank">Perspectives: a declarative bias mechanism for case retrieval</a></span>, Lecture Notes in Artificial Intelligence, Volume 1266, p.279-290.
+    </div>
+
+    <div class="biblio-entry" ptype="Music CBR SaxEx Awards">
+      <span class="biblio-authors">Josep Lluis Arcos; Ramon López de Mántaras; Xavier Serra</span> (1997).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55699">SaxEx : a case-based reasoning system for generating expressive musical performances</a></span>,
+      International Computer Music Conference ICMC&#039;97, p.329-336.
+    </div>
+
+    <div class="biblio-entry" ptype="MAS CBR ECAI">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos; Francisco Martin</span> (1996).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55710">Cooperation Modes among Case-Based Reasoning Agents</a></span>, Proceedings of the ECAI&#039;96 Workshop on Learning in Distributed AI Systems, p.90-99.
+    </div>
+
+    <div class="biblio-entry" ptype="Journal CBR Noos Introspection">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (1996).
+      <span><a class="biblio-title" href="https://doi.org/10.1016/0167-739X(96)00003-9" target="_blank">Inference and reflection in the object-centered representation language Noos</a></span>, Future Generation Computer Systems Journal.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR IJCAI Noos">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (1995).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55719">Reflection in Noos: An object-centered representation language for knowledge modelling</a></span>,
+      IJCAI&#039;95 Workshop: On Reflection and Meta-Level Architecture and their Applications in AI, p.1-10.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos ECCBR Introspection">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (1994).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-58330-0_94" target="_blank">A Reflective Architecture for Integrated Memory-Based Learning and Reasoning</a></span>, Lecture Notes in Artificial Intelligence, Volume 837, p.289-300.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos</span> (1994).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-57868-4_84" target="_blank">Flexible Integration of Multiple Learning Methods into a Problem-Solving Architecture</a></span>, Lecture Notes in Artificial Intelligence, Volume 784, p.403-406.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos">
+      <span class="biblio-authors">Josep Lluis Arcos; Enric Plaza</span> (1994).
+      <span><a class="biblio-title" href="https://doi.org/10.1007/3-540-58487-0_19" target="_blank">Integration of Learning into a Knowledge modelling framework</a></span>, Lecture Notes in Artificial Intelligence, Volume 867, p.355-373.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos Introspection">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos</span> (1993).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55732">A Reflective Architecture for Integrated Memory-based Learning and Reasoning</a></span>, EWCBR-93: First European Workshop on Case-Based Reasoning, University of Kaiserslautern, p.329-334.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos Introspection">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos</span> (1993).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55731">Reflection and Analogy in Memory-based Learning</a></span>, MSL-93 Second International Workshop on Multistrategy Learning, p.42-49.
+    </div>
+
+    <div class="biblio-entry" ptype="CBR Noos Introspection">
+      <span class="biblio-authors">Enric Plaza; Josep Lluis Arcos</span> (1993).
+      <span><a class="biblio-title" href="https://www.iiia.csic.es/en/node/55733">Using Reflection Principles in the Integration of Learning and Problem Solving</a></span>, ECML-93 Workshop on Integrated Learning Architectures, ILA-93.
+    </div>
+
+
+  </div>
+</div>
+
+<div class="footer" align="center">
+<span style="display: inline-block;vertical-align:middle;margin:5px">
+  
+</span>
+</div>
+</body>
+
+<script>
+
+function filterTag(tag) {
+  var items = document.getElementsByClassName("biblio-entry");
+  for (var idx=0;idx<items.length;idx++) {
+    if (items[idx].getAttributeNode("ptype").value.indexOf(tag)>=0) {
+      items[idx].style.display = '';
+    } else {
+      items[idx].style.display = 'none';
+    }
+  }
+  document.getElementById('filterName').innerHTML = "("+tag+")";
+}
+
+function showAll() {
+  var items = document.getElementsByClassName("biblio-entry");
+  for (var idx=0;idx<items.length;idx++) {
+    items[idx].style.display = ''
+  }
+  document.getElementById('filterName').innerHTML = "";
+}
+
+</script>
+
+</html>
