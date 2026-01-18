@@ -111,3 +111,6 @@ a.language-link.active {
   margin-top: -120px;
   visibility: hidden;
 }
+#map { 
+	height: 600px;
+}
