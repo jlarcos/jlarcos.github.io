@@ -3,8 +3,10 @@
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <title>Josep Lluis Arcos</title>
-   <link href="../css/leaflet.css" rel="stylesheet"/>
-   <link href="../css/styles.css" rel="stylesheet"/>
+   <link href="css/leaflet.css" rel="stylesheet"/>
+   <link href="css/styles.css" rel="stylesheet"/>
+   <script src="js/leaflet.js"></script>
+   <script src="js/gpx.js"></script>
 </head>
 <body style="margin: 0 0">
   <div class="top" align="center" >
@@ -45,5 +47,88 @@
   <div class="footer" align="center">
     <span style="display: inline-block;vertical-align:middle;margin:5px"></span>
   </div>
+
+<script>
+    var pointers = [{'latitude': 41.5014, 'longitude': 2.11152, 'title': 'IIIA-CSIC', 'url': 'https://www.iiia.csic.es'}, 
+                    {'latitude': 41.3449, 'longitude': 2.11057, 'title': 'Institut Català d’Oncologia (ICO)', 'url': 'https://ico.gencat.cat'},
+                    {'latitude': 41.3449, 'longitude': 2.11057, 'title': 'Bellvitge Biomedical Research Institute (IDIBELL)', 'url': 'https://idibell.cat'}, 
+                    {'latitude': 41.5025, 'longitude': 2.10368, 'title': 'Autonomous University of Barcelona (UAB)', 'url': 'https://www.uab.cat'},
+                    {'latitude': 41.3868, 'longitude': 2.16387, 'title': 'University of Barcelona', 'url': ''}, 
+                    {'latitude': 41.5626, 'longitude': 2.01712, 'title': 'Escola Universitària d’Infermeria i Teràpia Ocupacional, Universitat Autònoma de Barcelona', 'url': 'https://euit.fdsll.cat'}, 
+                    {'latitude': 41.3845, 'longitude': 2.19291, 'title': 'Hospital del Mar', 'url': ''}, 
+                    {'latitude': 41.3853, 'longitude': 2.19418, 'title': 'Institut Hospital del Mar d’Investigacions Mèdiques (IMIM)', 'url': ''}, 
+                    {'latitude': 40.7297, 'longitude': -73.9965, 'title': 'New York University', 'url': ''}, 
+                    {'latitude': 39.3308, 'longitude': -76.6208, 'title': 'John Hopkins University', 'url': ''}, 
+                    {'latitude': 60.1696, 'longitude': 24.9496, 'title': 'University of Helsinki', 'url': ''}, 
+                    {'latitude': 53.8344, 'longitude': 10.7036, 'title': 'University of Lübeck', 'url': ''}, 
+                    {'latitude': 41.3914, 'longitude': 2.17955, 'title': 'Catalan Institution for Research and Advanced Studies (ICREA)', 'url': 'https://www.icrea.cat'}, 
+                    {'latitude': -33.866, 'longitude': 151.207, 'title': 'University of Western Sydney', 'url': ''}, 
+                    {'latitude': 38.7196, 'longitude': -0.664752, 'title': 'Hilaturas Ferre, S.A.', 'url': ''}, 
+                    {'latitude': 44.5965, 'longitude': -123.25, 'title': 'BigML, Inc.', 'url': 'https://bigml.com'}, 
+                    {'latitude': 42.1698, 'longitude': -8.68337, 'title': 'University of Vigo', 'url': ''}, 
+                    {'latitude': 51.5128, 'longitude': -0.117105, 'title': "King's College", 'url': ''}, 
+                    {'latitude': 49.598, 'longitude': 11.0046, 'title': 'University of Erlangen-Nuremberg', 'url': ''},
+                    {'latitude': 48.1804, 'longitude': 11.5353, 'title': 'Huawei Munich Research Center', 'url': ''},
+                    {'latitude': 46.1997, 'longitude': 6.14499, 'title': 'University of Geneva', 'url': ''},
+                    {'latitude': 44.1455, 'longitude': 12.2482, 'title': 'Università di Bologna', 'url': ''},
+                    {'latitude': 37.1974, 'longitude': -3.62461, 'title': 'University of Granada', 'url': ''},
+                    {'latitude': 40.4434, 'longitude': -79.9429, 'title': 'Carnegie Mellon University', 'url': ''},
+                    {'latitude': 43.344, 'longitude': 5.43895, 'title': "Laboratoire de Mécanique et d'Acoustique (CNRS-LMA)", 'url': ''},
+                    {'latitude': 39.1685, 'longitude': -86.523, 'title': 'Indiana University', 'url': ''},
+                    {'latitude': 51.0468, 'longitude': 3.72734, 'title': 'Universiteit Gent', 'url': ''},
+                    {'latitude': 41.4801, 'longitude': 2.23812, 'title': 'Institut Guttmann Neorehabilitation Hospital', 'url': ''},
+                    {'latitude': 41.4284, 'longitude': 2.14099, 'title': "Vall d'Hebron University Hospital", 'url': ''},
+                    {'latitude': 41.4125, 'longitude': 2.22013, 'title': 'Telefónica Research', 'url': ''},
+                    {'latitude': 45.5106, 'longitude': -73.5751, 'title': 'McGill University', 'url': ''},
+                    {'latitude': 41.3749, 'longitude': 2.06915, 'title': 'Televisió de Catalunya', 'url': ''},
+                    {'latitude': 39.9569, 'longitude': -75.1899, 'title': 'Drexel University', 'url': ''},
+                    {'latitude': 40.4529, 'longitude': -3.7335, 'title': 'Universidad Complutense de Madrid', 'url': 'https://www.ucm.es/disia/'},
+                    {'latitude': 41.9637, 'longitude': 2.83194, 'title': 'University of Girona', 'url': ''},
+                    {'latitude': 41.4042, 'longitude': 2.19378, 'title': 'Pompeu Fabra University', 'url': ''}];
+
+$(document).ready(function(){
+
+  if (pointers.length != 0) {
+    var map = L.map('map').setView([pointers[0].latitude, pointers[0].longitude], 2);
+
+    var osm =L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var baseMaps = {
+    "OpenStreetMap": osm,
+    };
+
+    var layerControl = L.control.layers(baseMaps, null).addTo(map);
+
+    var openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: 'Map data: © OpenStreetMap contributors, SRTM | Map style: © OpenTopoMap (CC-BY-SA)'
+    });
+    layerControl.addBaseLayer(openTopoMap, "OpenTopoMap");
+
+    var arcgis = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                maxZoom: 19,
+                attribution: 'Map data: © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    })
+    layerControl.addBaseLayer(arcgis, "Esri World Imagery");
+
+    pointers.forEach(p => {
+        var m = L.marker([p.latitude, p.longitude]).addTo(map).bindTooltip(p.title);
+        if (p.url == "") {
+            m.bindPopup(p.title);
+        } else {
+            m.on('click', function(evt) {
+                window.open(p.url, '_blank');
+            });
+        }
+    });
+
+  }
+
+});
+</script>
+
 </body>
 </html>
